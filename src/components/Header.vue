@@ -27,21 +27,28 @@ export default {
 
     header {
         width: 100vw;
-        height: 200px;
         display: flex;
-        justify-content: space-around;
-        align-items: center; 
+        justify-content: space-around; 
+    }
+
+    img {
+        padding: 40px 0px;
     }
 
     ul {
         display: flex;
+        align-items: center;
+        padding: 40px 0px;
+
         li {
             list-style: none;
+
             a {
                 text-decoration: none;
                 text-transform: uppercase;
-                padding: 50px 15px;
+                font-weight: 600;
                 color: #464646;
+                padding: 80px 15px;
 
                 &.active, &:hover {
                     border-bottom: 4px solid $main-color;
