@@ -1,13 +1,13 @@
 <template>
-  <header></header>
+    <header></header>
 </template>
 
 <script>
 export default {
-
+    name: 'Header'
 }
 </script>
 
-<style>
+<style lang="scss" scoped>
 
 </style>
