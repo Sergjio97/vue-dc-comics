@@ -83,7 +83,17 @@
         </section>
 
         <!-- ***** SEZIONE LOGIN ***** -->
-        <section class="login"></section>
+        <section class="login">
+            <div class="box-sn"><a href="#">Sign-up now!</a></div>
+            <div class="box-dx">
+                <h2>Follow us</h2>
+                <img src="../assets/img/footer-facebook.png" alt="facebook logo">
+                <img src="../assets/img/footer-twitter.png" alt="twitter logo">
+                <img src="../assets/img/footer-youtube.png" alt="youtube logo">
+                <img src="../assets/img/footer-pinterest.png" alt="pinterest logo">
+                <img src="../assets/img/footer-periscope.png" alt="periscope logo">
+            </div>
+        </section>
 
     </footer>
 </template>
@@ -129,7 +139,7 @@ export default {
     width: 100vw;
     background-image: url('../assets/img/dc-logo-bg.png'), url('../assets/img/footer-bg.jpg');
     background-repeat: no-repeat;
-    background-size: 500px, cover;
+    background-size: 600px, cover;
     background-position-x: right 20%, 0;
     background-position-y: center, top;
 
@@ -148,11 +158,11 @@ export default {
             
             li {
                 list-style: none;
+                margin-bottom: 5px;
 
                 a {
                     text-decoration: none;
                     color: $footer-link;
-
                 }
 
             }
@@ -161,9 +171,51 @@ export default {
                 text-transform: uppercase;
                 color: #fff;
                 margin-bottom: 15px;
+                margin-top: 30px;
             }
         }
 
+    }
+}
+
+// ***** SEZIONE LOGIN *****
+.login {
+    width: 100vw;
+    background-color:#303030;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    .box-sn {
+        padding: 60px 0px;
+        // margin-left: 20%;
+    }
+
+    a {
+        text-decoration: none;
+        text-transform: uppercase;
+        font-size: 30px;
+        padding: 10px 10px;
+        border: 2px solid $main-color;
+        color: #fff;
+    }
+
+    .box-dx {
+        display: flex;
+        align-items: center;
+
+        h2 {
+            font-size: 30px;
+            text-transform: uppercase;
+            color: $main-color;
+            margin-right: 30px;
+        }
+
+        img {
+            width: 50px;
+            margin-right: 20px;
+            cursor: pointer;
+        }
     }
 }
 
