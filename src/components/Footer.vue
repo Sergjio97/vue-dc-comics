@@ -188,7 +188,6 @@ export default {
 
     .box-sn {
         padding: 60px 0px;
-        // margin-left: 20%;
     }
 
     a {
@@ -208,7 +207,7 @@ export default {
             font-size: 30px;
             text-transform: uppercase;
             color: $main-color;
-            margin-right: 30px;
+            margin-right: 40px;
         }
 
         img {
