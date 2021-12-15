@@ -13,12 +13,13 @@
             <li><a href="#">news</a></li>
             <li><a href="#">shop</a></li>
         </ul>
+        
     </header>
 </template>
 
 <script>
 export default {
-    name: 'Header'
+    name: 'Header',
 }
 </script>
 
