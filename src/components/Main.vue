@@ -1,12 +1,14 @@
 <template>
   <main>
       <Hero/>
+      <a id="series" href="#">Current series</a>
       <div class="box">
           <div class="card" v-for="(card, index) in cards" :key="index">
               <img :src="card.thumb" :alt="card.series">
               <h3>{{card.series}}</h3>
           </div>
       </div>
+      <div id="load"><a href="#">load more</a></div>
   </main>
 </template>
 
@@ -99,16 +101,19 @@ export default {
     }
 }
 </script>
-
 <style lang="scss" scoped>
+@import '../assets/style/partials/variables.scss';
+
 main {
     background-color: #1c1c1c;
+    max-height: 100%;
 }
 .box {
-    width: 55%;
+    width: 50%;
     margin: 0 auto;
     display: flex;
     flex-wrap: wrap;
+    margin-top: 40px;
 
     .card {
         width: calc(100% / 6);
@@ -116,6 +121,31 @@ main {
         cursor: pointer;
         color: #fff;
         text-transform: uppercase;
+    }
+}
+
+#series {
+    padding: 20px;
+    margin-left: 24%;
+    background-color: $main-color;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #fff;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+#load {
+    width: 100%;   
+    text-transform: uppercase;
+    text-align: center;
+
+    a {
+        background-color: $main-color;
+        color: #fff;
+        font-size: 25px;
+        cursor: pointer;
+        text-decoration: none;
     }
 }
 
